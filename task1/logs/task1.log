@@ -1,0 +1,5 @@
+2025-11-14 19:03:32 INFO  [           main] Main - The program is running...
+2025-11-14 19:03:33 DEBUG [           main] services.DataFilterProcessor - The DataFilterProcessor is initialized with parameters: outputPath=./output, prefix=result_, appendMode=true, shortStats=false, fullStats=true
+2025-11-14 19:03:33 INFO  [           main] services.DataFilterProcessor - The beginning of data processing. Number of data files = 2
+2025-11-14 19:03:33 INFO  [           main] services.DataFilterProcessor - The end of data processing. Number of files = 2
+2025-11-14 19:03:33 INFO  [           main] Main - The program is finished.
