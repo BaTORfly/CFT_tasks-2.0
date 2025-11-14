@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application' // добавляем если есть main класс
+}
+
+group = 'ru.batorfly'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17 // или ваша версия Java
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.11.0') // обновленная версия
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34' // используем compileOnly вместо implementation
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    implementation 'com.beust:jcommander:1.82'
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.1'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Добавляем для лучшей обработки ресурсов
+tasks.named('processResources') {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+// Настройка кодировки по умолчанию
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// Если есть main класс - добавляем
+application {
+    mainClass = 'Main' // замените на ваш главный класс
+}
