@@ -17,7 +17,7 @@ public class Circle extends Shape{
 
     @Override
     public ShapeType getType() {
-        return ShapeType.CIRCLE;
+        return SHAPE_TYPE;
     }
 
     @Override

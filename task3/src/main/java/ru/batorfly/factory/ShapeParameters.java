@@ -28,8 +28,7 @@ public record ShapeParameters(String typeLine, String parametersLine) {
 
         if (lines.size() != 2) {
             throw new IllegalArgumentException(String.format(
-                    "Error while reading shape parameters from file: %s" + filePath +
-                            ". Excepted 2 lines, got " + lines.size()
+                    "Error while reading shape parameters from file: %s. Excepted 2 lines, got %d", filePath, lines.size()
             ));
         }
 

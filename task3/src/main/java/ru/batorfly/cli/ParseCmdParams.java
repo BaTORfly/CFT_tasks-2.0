@@ -59,12 +59,12 @@ public final class ParseCmdParams implements Runnable{
 
             return parser.getParsedCmdParams();
         } catch (CommandLine.ParameterException ex) {
-            log.error("Command line error: " + ex.getMessage());
+            log.error("Command line error:", ex);
             cmd.usage(System.err);
             System.exit(1);
             return null;
         } catch (IllegalArgumentException ex) {
-            log.error("Validation error: " + ex.getMessage());
+            log.error("Validation error: ", ex);
             cmd.usage(System.err);
             System.exit(1);
             return null;

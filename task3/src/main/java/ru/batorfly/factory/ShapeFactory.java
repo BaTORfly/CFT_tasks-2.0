@@ -3,7 +3,6 @@ package ru.batorfly.factory;
 import lombok.NoArgsConstructor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.batorfly.exceptions.IllegalTriangleSidesException;
 import ru.batorfly.shapes.Circle;
 import ru.batorfly.shapes.Rectangle;
 import ru.batorfly.shapes.Shape;

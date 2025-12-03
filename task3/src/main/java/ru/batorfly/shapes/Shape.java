@@ -9,8 +9,6 @@ import java.util.Arrays;
 
 public abstract class Shape {
 
-    private static final Logger log = LogManager.getLogger(Shape.class);
-
     static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
     static final String UNIT = " см";
     static final String SQ_UNIT = UNIT + "²";
