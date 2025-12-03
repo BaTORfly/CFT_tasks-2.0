@@ -1,7 +1,5 @@
 package ru.batorfly.shapes;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import ru.batorfly.factory.ShapeType;
 
 import java.text.DecimalFormat;

@@ -4,5 +4,5 @@
 java.lang.IllegalArgumentException: All the parameters must be >=1 but found: -7.0
 	at ru.batorfly.shapes.Shape.parseDoubles(Shape.java:35) ~[main/:?]
 	at ru.batorfly.shapes.Rectangle.create(Rectangle.java:15) ~[main/:?]
-	at ru.batorfly.factory.ShapeFactory.create(ShapeFactory.java:31) ~[main/:?]
+	at ru.batorfly.factory.ShapeFactoryTest.create(ShapeFactory.java:31) ~[main/:?]
 	at ru.batorfly.Main.main(Main.java:22) [main/:?]
