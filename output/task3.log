@@ -1,0 +1,8 @@
+2025-12-03 11:28:27 INFO  [           main] ru.batorfly.Main - Starting the program...
+2025-12-03 11:28:27 INFO  [           main] ru.batorfly.factory.ShapeParameters - Reading shape parameters from file: classpath:input.txt
+2025-12-03 11:28:27 ERROR [           main] ru.batorfly.Main - Application failed
+java.lang.IllegalArgumentException: All the parameters must be >=1 but found: -7.0
+	at ru.batorfly.shapes.Shape.parseDoubles(Shape.java:35) ~[main/:?]
+	at ru.batorfly.shapes.Rectangle.create(Rectangle.java:15) ~[main/:?]
+	at ru.batorfly.factory.ShapeFactory.create(ShapeFactory.java:31) ~[main/:?]
+	at ru.batorfly.Main.main(Main.java:22) [main/:?]

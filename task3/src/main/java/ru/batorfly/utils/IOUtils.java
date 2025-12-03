@@ -1,12 +1,11 @@
 package ru.batorfly.utils;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class IOUtils {
+public final class IOUtils {
     private IOUtils() {
         throw new UnsupportedOperationException("Utility class should not be instantiated");
     }
@@ -18,18 +17,6 @@ public class IOUtils {
         } else {
             return readFromFileSystem(filePath);
         }
-    }
-
-    public static void createOutputDirectoryIfNeeded() throws IOException {
-        Path outputDir = Path.of("output");
-        if (!Files.exists(outputDir)) {
-            Files.createDirectories(outputDir);
-        }
-    }
-
-    public static void writeToFile(String content, String filePath) throws IOException {
-        Path path = Path.of(filePath);
-        Files.writeString(path, content, StandardCharsets.UTF_8);
     }
 
     private static String readFromClassPath(String resourcePath) throws IOException {

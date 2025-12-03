@@ -1,0 +1,9 @@
+Shape type: TRIANGLE
+Area: 9,8 см²
+Perimeter: 16 см
+Side1 = 5 см
+Angle opposite the side1 (in degrees) = 44,42°
+Side2 = 7 см
+Angle opposite the side2 (in degrees) = 101,54°
+Side3 = 4 см
+Angle opposite the side3 (in degrees) = 34,05°

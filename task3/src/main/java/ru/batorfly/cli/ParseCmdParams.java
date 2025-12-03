@@ -1,17 +1,18 @@
-package ru.batorfly.parameters;
+package ru.batorfly.cli;
 
 import lombok.Getter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.tools.picocli.CommandLine;
-import ru.batorfly.parameters.utils.ValidationUtils;
+
+import picocli.CommandLine;
+import ru.batorfly.cli.utils.ValidationUtils;
 
 @CommandLine.Command(
         name = "ShapeProcessor",
         description = "Processing shape information from input file",
         version = "1.0"
 )
-public class ParseCmdParams implements Runnable{
+public final class ParseCmdParams implements Runnable{
     private static final Logger log = LogManager.getLogger(ParseCmdParams.class);
 
     @CommandLine.Parameters(

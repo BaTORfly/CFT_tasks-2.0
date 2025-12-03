@@ -4,9 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.batorfly.factory.ShapeType;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 public abstract class Shape {
 
@@ -17,8 +16,27 @@ public abstract class Shape {
     static final String SQ_UNIT = UNIT + "²";
     static final String EOL = System.lineSeparator();
 
+    public static double[] parseDoubles(String line, int exceptedCount) throws IllegalArgumentException {
+        double[] params;
+        try {
+            params = Arrays.stream(line.trim().split("\\s+"))
+                    .mapToDouble(Double::parseDouble)
+                    .toArray();
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Error parsing parameters. Ensure all parameters are numbers.");
+        }
 
-    public abstract void writeFigureData(BufferedWriter writer) throws IOException;
+        if (params.length != exceptedCount) {
+            throw new IllegalArgumentException("Excepted " + exceptedCount + " parameters but found: " + params.length);
+        }
+
+        for (double param : params) {
+            if (param < 1) {
+                throw new IllegalArgumentException("All the parameters must be >=1 but found: " + param);
+            }
+        }
+        return params;
+    }
 
     public abstract ShapeType getType();
 
@@ -26,7 +44,7 @@ public abstract class Shape {
 
     public abstract double computeArea();
 
-    StringBuilder computeShapesDataStr(){
+    public StringBuilder buildShapesDataStr(){
         var sb = new StringBuilder();
 
         sb.append("Shape type: ")
@@ -34,12 +52,8 @@ public abstract class Shape {
         sb.append("Area: ")
                 .append(DECIMAL_FORMAT.format(computeArea())).append(SQ_UNIT).append(EOL);
         sb.append("Perimeter: ")
-                .append(DECIMAL_FORMAT.format(computePerimeter())).append(EOL);
+                .append(DECIMAL_FORMAT.format(computePerimeter())).append(UNIT).append(EOL);
         return sb;
     }
 
-    void writeFigureData(BufferedWriter writer, String shapeData) throws IOException {
-        log.debug("Printing shape data to a present output stream");
-        writer.write(shapeData);
-    }
 }

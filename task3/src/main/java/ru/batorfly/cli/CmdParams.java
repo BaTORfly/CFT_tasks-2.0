@@ -1,4 +1,4 @@
-package ru.batorfly.parameters;
+package ru.batorfly.cli;
 
 public record CmdParams (
         String inputFile,

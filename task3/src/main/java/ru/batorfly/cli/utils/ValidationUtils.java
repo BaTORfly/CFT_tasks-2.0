@@ -1,9 +1,9 @@
-package ru.batorfly.parameters.utils;
+package ru.batorfly.cli.utils;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class ValidationUtils {
+public final class ValidationUtils {
 
     private ValidationUtils() {
         throw new UnsupportedOperationException("Utility class should not be instantiated");
