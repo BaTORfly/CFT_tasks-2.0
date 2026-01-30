@@ -1,0 +1,47 @@
+2026-01-30 10:53:51.895 [main] INFO  ru.batorfly.config.Config - Start loading properties from file: config.properties
+2026-01-30 10:53:51.895 [Thread-1] INFO  ru.batorfly.producer.ResourceProducingTask - Producer #2 started producing
+2026-01-30 10:53:51.895 [Thread-2] INFO  ru.batorfly.producer.ResourceProducingTask - Producer #3 started producing
+2026-01-30 10:53:51.895 [Thread-0] INFO  ru.batorfly.producer.ResourceProducingTask - Producer #1 started producing
+2026-01-30 10:53:51.895 [Thread-3] INFO  ru.batorfly.producer.ResourceProducingTask - Producer #4 started producing
+2026-01-30 10:53:51.904 [Thread-4] INFO  ru.batorfly.consumer.ResourceConsumingTask - Consumer #1 start working
+2026-01-30 10:53:51.904 [Thread-5] INFO  ru.batorfly.consumer.ResourceConsumingTask - Consumer #2 start working
+2026-01-30 10:53:52.913 [Thread-4] INFO  ru.batorfly.storage.Storage - Consumer #1 waiting for resources to appear in the storage
+2026-01-30 10:53:52.914 [Thread-5] INFO  ru.batorfly.storage.Storage - Consumer #2 waiting for resources to appear in the storage
+2026-01-30 10:53:52.914 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'4' is produced by producer #'4'Amount of resources before producing = 0.
+2026-01-30 10:53:52.915 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'3' is produced by producer #'2'Amount of resources before producing = 1.
+2026-01-30 10:53:52.915 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'1' is produced by producer #'3'Amount of resources before producing = 2.
+2026-01-30 10:53:52.915 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'2' is produced by producer #'1'Amount of resources before producing = 3.
+2026-01-30 10:53:52.915 [Thread-5] INFO  ru.batorfly.storage.Storage - Consumer #2 return to consuming resources
+2026-01-30 10:53:52.915 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'4' is consumed by consumer #'2'Amount of messages before consuming = 4.
+2026-01-30 10:53:52.915 [Thread-4] INFO  ru.batorfly.storage.Storage - Consumer #1 return to consuming resources
+2026-01-30 10:53:52.915 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'3' is consumed by consumer #'1'Amount of messages before consuming = 3.
+2026-01-30 10:53:53.926 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'5' is produced by producer #'4'Amount of resources before producing = 2.
+2026-01-30 10:53:53.926 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'8' is produced by producer #'3'Amount of resources before producing = 3.
+2026-01-30 10:53:53.926 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'7' is produced by producer #'2'Amount of resources before producing = 4.
+2026-01-30 10:53:53.927 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'1' is consumed by consumer #'2'Amount of messages before consuming = 5.
+2026-01-30 10:53:53.927 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'6' is produced by producer #'1'Amount of resources before producing = 4.
+2026-01-30 10:53:53.927 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'2' is consumed by consumer #'1'Amount of messages before consuming = 5.
+2026-01-30 10:53:54.926 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'9' is produced by producer #'4'Amount of resources before producing = 4.
+2026-01-30 10:53:54.926 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'10' is produced by producer #'3'Amount of resources before producing = 5.
+2026-01-30 10:53:54.928 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'11' is produced by producer #'2'Amount of resources before producing = 6.
+2026-01-30 10:53:54.944 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'5' is consumed by consumer #'1'Amount of messages before consuming = 7.
+2026-01-30 10:53:54.945 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'8' is consumed by consumer #'2'Amount of messages before consuming = 6.
+2026-01-30 10:53:54.946 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'12' is produced by producer #'1'Amount of resources before producing = 5.
+2026-01-30 10:53:55.940 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'13' is produced by producer #'3'Amount of resources before producing = 6.
+2026-01-30 10:53:55.940 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'15' is produced by producer #'2'Amount of resources before producing = 7.
+2026-01-30 10:53:55.941 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'14' is produced by producer #'4'Amount of resources before producing = 8.
+2026-01-30 10:53:55.957 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'7' is consumed by consumer #'2'Amount of messages before consuming = 9.
+2026-01-30 10:53:55.957 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'16' is produced by producer #'1'Amount of resources before producing = 8.
+2026-01-30 10:53:55.959 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'6' is consumed by consumer #'1'Amount of messages before consuming = 9.
+2026-01-30 10:53:56.942 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'17' is produced by producer #'2'Amount of resources before producing = 8.
+2026-01-30 10:53:56.942 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'18' is produced by producer #'3'Amount of resources before producing = 9.
+2026-01-30 10:53:56.943 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'19' is produced by producer #'4'Amount of resources before producing = 10.
+2026-01-30 10:53:56.959 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'9' is consumed by consumer #'2'Amount of messages before consuming = 11.
+2026-01-30 10:53:56.959 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'20' is produced by producer #'1'Amount of resources before producing = 10.
+2026-01-30 10:53:56.960 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'10' is consumed by consumer #'1'Amount of messages before consuming = 11.
+2026-01-30 10:53:57.956 [Thread-1] INFO  ru.batorfly.storage.Storage - Resource #'21' is produced by producer #'2'Amount of resources before producing = 10.
+2026-01-30 10:53:57.956 [Thread-2] INFO  ru.batorfly.storage.Storage - Resource #'22' is produced by producer #'3'Amount of resources before producing = 11.
+2026-01-30 10:53:57.957 [Thread-3] INFO  ru.batorfly.storage.Storage - Resource #'23' is produced by producer #'4'Amount of resources before producing = 12.
+2026-01-30 10:53:57.972 [Thread-5] INFO  ru.batorfly.storage.Storage - Resource #'11' is consumed by consumer #'2'Amount of messages before consuming = 13.
+2026-01-30 10:53:57.972 [Thread-4] INFO  ru.batorfly.storage.Storage - Resource #'12' is consumed by consumer #'1'Amount of messages before consuming = 12.
+2026-01-30 10:53:57.973 [Thread-0] INFO  ru.batorfly.storage.Storage - Resource #'24' is produced by producer #'1'Amount of resources before producing = 11.
